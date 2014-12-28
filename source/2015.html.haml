@@ -1,0 +1,23 @@
+---
+layout: 2015
+---
+%header
+  %h1
+    Bonne Année 2015
+%section#cd-timeline.cd-container
+  - data.year_2015.moments.each do |moment|
+    .cd-timeline-block
+      .cd-timeline-img.cd-picture
+        %i{class: "fa #{moment.icon}"}
+      .cd-timeline-content
+        %h2
+          #{moment.title}
+        %p
+          - if !moment.pictures.nil?
+            - moment.pictures.each do |picture|
+              %img{src: "/images/2015/#{picture}.jpg", srcset: "/images/2015/#{picture}@2x.jpg 2x"}
+          - if !moment.videos.nil?
+            - moment.videos.each do |video|
+              %iframe{ width: "560", height: "315", src: "//www.youtube.com/embed/#{video}", frameborder:"0", allowfullscreen: ''}
+        %span.cd-date
+          #{moment.date}

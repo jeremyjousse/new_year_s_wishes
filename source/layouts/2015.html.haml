@@ -1,0 +1,29 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title
+      Bonne année 2015
+    %meta{:content => "", :name => "description"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+
+    %link{:href => "//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css", :rel => "stylesheet"}/
+    %link{:href => "stylesheets/2015.css", :rel => "stylesheet"}/
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"}
+    %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+  %body
+    /[if lt IE 7]
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    / Add your site or application content here
+    = yield
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"><\/script>')
+    %script{:src => "javascripts/2015.js"}
