@@ -177,3 +177,12 @@ moments:
       - img_3171
       - img_3001
       - IMG_2643
+  -
+    title: Vacances en Suisse
+    date: 8 Août
+    icon: fa-bicycle
+    pictures:
+      - img_1911
+      - img_1669
+      - IMG_2124
+      - IMG_9525
