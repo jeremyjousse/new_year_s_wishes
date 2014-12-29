@@ -176,7 +176,7 @@ moments:
   -
     title: Vacances en Alsace avec Grand père et Grand mère
     date: 5 Juillet
-    icon: fa-bicycle
+    icon: fa-suitcase
     pictures:
       - IMG_0005
       - img_3171
@@ -185,7 +185,7 @@ moments:
   -
     title: Vacances en Suisse
     date: 8 Août
-    icon: fa-bicycle
+    icon: fa-camera-retro
     pictures:
       - img_1911
       - img_1669
@@ -197,7 +197,7 @@ moments:
   -
     title: Jardinage
     date: 31 Août
-    icon: fa-bicycle
+    icon: fa-leaf
     pictures:
       - img_9566
   -
@@ -209,7 +209,7 @@ moments:
   -
     title: Repas de rentrée chez Pierre et Isa
     date: 7 Septembre
-    icon: fa-birthday-cake
+    icon: fa-cutlery
     pictures:
       - img_9580
       - IMG_9578
@@ -217,20 +217,20 @@ moments:
   -
     title: Fête des voisins
     date: 14 Septembre
-    icon: fa-birthday-cake
+    icon: fa-music
     pictures:
       - img_9595
   -
     title: Mariage d'Etienne et Marion
     date: 4 Octobre
-    icon: fa-birthday-cake
+    icon: fa-thumbs-up
     pictures:
       - img_0080
       - img_0089
   -
     title: Trek au Népal
     date: 15 Octobre
-    icon: fa-birthday-cake
+    icon: fa-globe
     pictures:
       - IMG_0217
       - img_2635
@@ -238,7 +238,7 @@ moments:
   -
     title: Guadeloupe avec Grand père et Grand mère
     date: 17 Octobre
-    icon: fa-birthday-cake
+    icon: fa-plane
     pictures:
       - img_0093
       - IMG_3980
@@ -248,26 +248,26 @@ moments:
   -
     title: Patinoire
     date: 9 Novembre
-    icon: fa-birthday-cake
+    icon: fa-trophy
     videos:
-      - img_0093
+      - 5pIOCldDCGk
   -
     title: Jardinage à l'école
     date: 29 Novembre
-    icon: fa-birthday-cake
+    icon: fa-graduation-cap
     pictures:
       - img_123
       - img_124
   -
     title: Patinage avec Joséphine
     date: 29 Novembre
-    icon: fa-birthday-cake
+    icon: fa-trophy
     videos:
       - 0HZhD-cKaGM
   -
     title: Saint Nicolas avec Otso
     date: 6 Décembre
-    icon: fa-birthday-cake
+    icon: fa-camera
     pictures:
       - IMG_0581
       - img_0564
@@ -276,14 +276,14 @@ moments:
   -
     title: Concert de Chantal Goya avec Matipas
     date: 21 Décembre
-    icon: fa-birthday-cake
+    icon: fa-music
     pictures:
       - IMG_0658
       - img_0664
   -
     title: Noël
     date: 24 Décembre
-    icon: fa-birthday-cake
+    icon: fa-tag
     pictures:
       - img_3615
       - IMG_0014
