@@ -1,0 +1,119 @@
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.scroll_text{
+	font-size: 12px;
+	color: #CCCCCC;
+}
+
+#images .image section{
+width: 100%;
+background-attachment: fixed;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+#articles{
+}
+
+.article{
+	padding-top: 20%;
+	color:#CCCCCC; 
+	z-index: 10
+	top:0px;
+	width: 100%;
+	position: absolute;
+	font-family: 'Sintony', sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+
+}
+
+#article_1{
+	color:#5d8a83;
+}
+
+#article_2{
+	color:#d8ff57;
+}
+
+#article_3{
+	color:#d9c8b3;
+}
+
+#article_4{
+	color:#c9e200;
+}
+
+#article_5{
+	color:#a77c6c;
+}
+
+#article_6{
+	color:#94cfb3;
+}
+
+#article_7{
+	color:#ff8e37;
+}
+
+#article_8{
+	color:#ff1b66;
+}
+#article_9{
+	color:#f3c207;
+}
+#article_10{
+	color:#b54862;
+}
+#article_11{
+	color:#332e25;
+}
+#article_12{
+	color:#ff9984;
+}
+#article_13{
+	color:#e5c5ff;
+}
+#article_14{
+	color:#d5ffd3;
+}
+#article_15{
+	color:#8e0620;
+}
+#article_16{
+	color:#db4315;
+}
+#article_17{
+	color:#aac040;
+}
+#article_18{
+	color:#d1ffd3;
+}
+#article_19{
+	color:#00dcff;
+}
+#article_20{
+	color:#be96cc;
+}
+#article_21{
+	color:#6d8990;
+}
+
+
+#images{
+	z-index: 1
+
+}
+
+
+
+
+
+
+
+
