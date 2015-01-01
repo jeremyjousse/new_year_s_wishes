@@ -33,7 +33,7 @@ moments:
       - img_8387
       - img_8383
   -
-    title: Shooting photo avec Damien et mathilde à la maison
+    title: Shooting photo avec Damien et Mathilde à la maison
     date: 15 Février
     icon: fa-camera
     pictures:
@@ -105,7 +105,7 @@ moments:
       - img_0735
       - img_0663
   -
-    title: Vacances de paques à De Haan
+    title: Vacances de Pâques à De Haan
     date: 1 Mai
     icon: fa-life-ring
     pictures:
@@ -121,14 +121,14 @@ moments:
     pictures:
       - img_8914
   -
-    title: Inoguration de l'expo d'Erika
+    title: Inauguration de l'expo d'Erika
     date: 24 Mai
     icon: fa-users
     pictures:
       - IMG_8930
       - IMG_8927
   -
-    title: Spéctacle de danse à Chopin
+    title: Spectacle de danse à Chopin
     date: 31 Mai
     icon: fa-university
     pictures:
@@ -158,7 +158,7 @@ moments:
     pictures:
       - img_1019
   -
-    title: Weekend à Zeeland
+    title: Weekend dans le Zeeland
     date: 20 Juin
     icon: fa-bicycle
     pictures:
