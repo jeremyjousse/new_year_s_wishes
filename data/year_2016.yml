@@ -1,0 +1,40 @@
+moments:
+  -
+    title: Anniversaire de Lili
+    date: 03/01/2016
+    icon: fa-birthday-cake
+    pictures:
+      - IMG_3773
+  -
+    title: Weekend entre amis
+    date: 05/01/2016
+    icon: fa-cutlery
+    pictures:
+      - img_3774
+  -
+    title: Anniversaire de Jérémy
+    date: 12/01/2016
+    icon: fa-birthday-cake
+    pictures:
+      - img_8314
+  -
+    title: Poney avec Matipas
+    date: 18/01/2016
+    icon: fa-futbol-o
+    pictures:
+      - img_8341
+      - img_0288
+  -
+    title: Poney avec Matipas
+    date: 20/01/2016
+    icon: fa-futbol-o
+    pictures:
+      - img_8341
+      - img_0288
+  -
+    title: Poney avec Matipas
+    date: 30/01/2016
+    icon: fa-futbol-o
+    pictures:
+      - img_8341
+      - img_0288

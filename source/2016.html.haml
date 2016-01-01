@@ -1,0 +1,41 @@
+---
+layout: 2016
+---
+%section.cd-horizontal-timeline
+  .timeline
+    .events-wrapper
+      .events
+        %ol
+          - moment_key = 0
+          - selected_moment = 'selected'
+          - data.year_2016.moments.each do |moment|
+            %li
+              %a{'data-date': "#{moment.date}", href: "\##{moment_key}", class: selected_moment} #{moment.date}
+            - selected_moment = 'not_selected' if selected_moment == 'selected'
+            - moment_key = moment_key + 1
+        %span.filling-line{"aria-hidden" => "true"}
+      / .events
+    / .events-wrapper
+    %ul.cd-timeline-navigation
+      %li
+        %a.prev.inactive{:href => "#0"} Prev
+      %li
+        %a.next{:href => "#0"} Next
+    / .cd-timeline-navigation
+  / .timeline
+  .events-content
+    %ol
+      - moment_key = 0
+      - selected_moment = 'selected'
+      - data.year_2016.moments.each do |moment|
+        %li{'data-date': moment.date, class: selected_moment}
+          %h2 #{moment.title}
+          %em #{moment.date}
+          %p
+            - if !moment.pictures.nil?
+              - moment.pictures.each do |picture|
+                %img{src: "/images/2016/#{picture}.jpg", srcset: "/images/2016/#{picture}@2x.jpg 2x"}
+            - if !moment.videos.nil?
+              - moment.videos.each do |video|
+                %iframe{ width: "560", height: "315", src: "//www.youtube.com/embed/#{video}", frameborder:"0", allowfullscreen: ''}
+        - selected_moment = 'not_selected' if selected_moment == 'selected'
