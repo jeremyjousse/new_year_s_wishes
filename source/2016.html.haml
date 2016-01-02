@@ -32,9 +32,12 @@ layout: 2016
           %h2 #{moment.title}
           %em #{moment.date}
           %p
+            - unless moment.description.nil?
+              = moment.description
             - if !moment.pictures.nil?
               - moment.pictures.each do |picture|
-                %img{src: "/images/2016/#{picture}.jpg", srcset: "/images/2016/#{picture}@2x.jpg 2x"}
+                %img{src: "/images/2016/#{picture}.jpg"}
+                -#%img{src: "/images/2016/#{picture}.jpg", srcset: "/images/2016/#{picture}@2x.jpg 2x"}
             - if !moment.videos.nil?
               - moment.videos.each do |video|
                 %iframe{ width: "560", height: "315", src: "//www.youtube.com/embed/#{video}", frameborder:"0", allowfullscreen: ''}
