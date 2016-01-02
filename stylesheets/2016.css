@@ -1,0 +1,568 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 96, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block; }
+
+/* line 110, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+body {
+  line-height: 1; }
+
+/* line 113, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 117, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 121, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/* line 128, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+/* line 137, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+/* line 142, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 145, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #383838;
+  background-color: #f8f8f8; }
+
+/* line 151, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+a {
+  color: #7b9d6f;
+  text-decoration: none; }
+
+/* --------------------------------
+
+Main Components
+
+-------------------------------- */
+/* line 161, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline {
+  opacity: 0;
+  margin: 0.2em auto;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+
+/* line 168, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none; }
+
+/* line 173, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline.loaded {
+  /* show the timeline after events position has been set (using JavaScript) */
+  opacity: 1; }
+
+/* line 177, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .timeline {
+  position: relative;
+  height: 100px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto; }
+
+/* line 184, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-wrapper {
+  position: relative;
+  height: 100%;
+  margin: 0 40px;
+  overflow: hidden; }
+
+/* line 190, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-wrapper::after,
+.cd-horizontal-timeline .events-wrapper::before {
+  /* these are used to create a shadow effect at the sides of the timeline */
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 20px; }
+
+/* line 200, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-wrapper::before {
+  left: 0;
+  background-image: -webkit-linear-gradient(left, #f8f8f8, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0)); }
+
+/* line 205, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-wrapper::after {
+  right: 0;
+  background-image: -webkit-linear-gradient(right, #f8f8f8, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0)); }
+
+/* line 210, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events {
+  /* this is the grey line/timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 49px;
+  height: 2px;
+  /* width will be set using JavaScript */
+  background: #dfdfdf;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s; }
+
+/* line 223, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #7b9d6f;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s; }
+
+/* line 246, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events a {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+  color: #383838;
+  /* fix bug on Safari - text flickering while timeline translates */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0); }
+
+/* line 261, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events a::after {
+  /* this is used to create the event spot */
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid #dfdfdf;
+  background-color: #f8f8f8;
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
+  -moz-transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s; }
+
+/* line 282, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #7b9d6f;
+  border-color: #7b9d6f; }
+
+/* line 286, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events a.selected {
+  pointer-events: none; }
+
+/* line 289, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events a.selected::after {
+  background-color: #7b9d6f;
+  border-color: #7b9d6f; }
+
+/* line 293, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events a.older-event::after {
+  border-color: #7b9d6f; }
+
+@media only screen and (min-width: 1100px) {
+  /* line 297, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+  .cd-horizontal-timeline::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop'; } }
+/* line 302, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-timeline-navigation a {
+  /* these are the left/right arrows to navigate the timeline */
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border: 2px solid #dfdfdf;
+  /* replace text with an icon */
+  overflow: hidden;
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  transition: border-color 0.3s; }
+
+/* line 326, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-timeline-navigation a::after {
+  /* arrow icon */
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(/images/2016/cd-arrow.svg) no-repeat 0 0; }
+
+/* line 343, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-timeline-navigation a.prev {
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  -o-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg); }
+
+/* line 351, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-timeline-navigation a.next {
+  right: 0; }
+
+/* line 354, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.no-touch .cd-timeline-navigation a:hover {
+  border-color: #7b9d6f; }
+
+/* line 357, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-timeline-navigation a.inactive {
+  cursor: not-allowed; }
+
+/* line 360, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-timeline-navigation a.inactive::after {
+  background-position: 0 -16px; }
+
+/* line 363, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.no-touch .cd-timeline-navigation a.inactive:hover {
+  border-color: #dfdfdf; }
+
+/* line 366, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content {
+  position: relative;
+  width: 100%;
+  margin: 0.5em 0;
+  overflow: hidden;
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  transition: height 0.4s; }
+
+/* line 375, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content li {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  padding: 0 5%;
+  opacity: 0;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
+
+/* line 395, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content li.selected {
+  /* visible event content */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0); }
+
+/* line 406, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content li.enter-right,
+.cd-horizontal-timeline .events-content li.leave-right {
+  -webkit-animation-name: cd-enter-right;
+  -moz-animation-name: cd-enter-right;
+  animation-name: cd-enter-right; }
+
+/* line 412, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content li.enter-left,
+.cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-name: cd-enter-left;
+  -moz-animation-name: cd-enter-left;
+  animation-name: cd-enter-left; }
+
+/* line 418, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content li.leave-right,
+.cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  animation-direction: reverse; }
+
+/* line 424, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content li > * {
+  max-width: 800px;
+  margin: 0 auto; }
+
+/* line 428, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content h2 {
+  font-weight: bold;
+  font-size: 2.6rem;
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+  line-height: 1.2; }
+
+/* line 435, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content em {
+  display: block;
+  font-style: italic;
+  margin: 10px auto; }
+
+/* line 440, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content em::before {
+  content: '- '; }
+
+/* line 443, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content p {
+  font-size: 1.4rem;
+  color: #959595; }
+
+/* line 447, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content em,
+.cd-horizontal-timeline .events-content p {
+  line-height: 1.6; }
+
+/* line 451, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+.cd-horizontal-timeline .events-content p img {
+  width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  /* line 455, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+  .cd-horizontal-timeline .events-content h2 {
+    font-size: 7rem; }
+
+  /* line 458, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+  .cd-horizontal-timeline .events-content em {
+    font-size: 2rem; }
+
+  /* line 461, /Users/jerry/Development/new_year_s_wishes/source/stylesheets/2016.scss */
+  .cd-horizontal-timeline .events-content p {
+    font-size: 1.8rem; } }
+@-webkit-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%); } }
+@-moz-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100%); }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%); } }
+@keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%); } }
+@-webkit-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%); } }
+@-moz-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%); }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%); } }
+@keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%); } }
