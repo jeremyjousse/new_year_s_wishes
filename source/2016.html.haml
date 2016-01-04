@@ -10,7 +10,7 @@ layout: 2016
           - selected_moment = 'selected'
           - data.year_2016.moments.each do |moment|
             %li
-              %a{'data-date': "#{moment.date}", href: "\##{moment_key}", class: selected_moment} #{moment.date}
+              %a{'data-date': "#{moment.date}", href: "\##{moment_key}", class: selected_moment} #{format_date_2016(moment.date)}
             - selected_moment = 'not_selected' if selected_moment == 'selected'
             - moment_key = moment_key + 1
         %span.filling-line{"aria-hidden" => "true"}
